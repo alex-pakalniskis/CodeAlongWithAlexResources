@@ -1,6 +1,5 @@
 ## Recipe
 1. Set up a new AssemblyScript project and open it with VS Code
-    * https://www.assemblyscript.org/getting-started.html#setting-up-a-new-project
 
     ``` bash
     mkdir as-mandelbrot && cd as-mandelbrot
@@ -217,15 +216,19 @@
 
 1. Edit the build commands in package.json to include the following values
 
-    ```
-    --runtime stub --use Math=JSMath --importMemory
+    ``` json
+    "asbuild:debug": "asc assembly/index.ts --target debug --runtime stub --use Math=JSMath --importMemory",
+    "asbuild:release": "asc assembly/index.ts --target release --runtime stub --use Math=JSMath --importMemory",
     ```
 
-1. Compile the example
+1. Compile the example then start the app
 
     ``` bash
     npm run asbuild
+    npm start
     ```
+    
+1. Paste url into browser of your choice
 
 1. If browser restricts fetching local resources when opening `index.html`, set up local server workaround
 
@@ -235,6 +238,5 @@
     ```
 
 ## Resources
-Tutorial link: https://www.assemblyscript.org/examples/mandelbrot.html
-
-Note to Alex: Use Chrome, not Chromium 
+* Tutorial link: https://www.assemblyscript.org/examples/mandelbrot.html
+* Set up new AssymblyScript project: https://www.assemblyscript.org/getting-started.html#setting-up-a-new-project
