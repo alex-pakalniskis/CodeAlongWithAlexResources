@@ -174,7 +174,7 @@
 1. Compile the example
 
     ``` bash
-    npm rus asbuild
+    npm run asbuild
     ```
 
 1. If browser restricts fetching local resources when opening `index.html`, set up local server workaround
