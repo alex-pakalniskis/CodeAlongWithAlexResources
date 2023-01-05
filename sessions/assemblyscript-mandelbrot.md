@@ -1,5 +1,5 @@
 ## Recipe
-1. Set up a new AssemblyScript project
+1. Set up a new AssemblyScript project and open it with VS Code
     * https://www.assemblyscript.org/getting-started.html#setting-up-a-new-project
 
     ``` bash
@@ -7,6 +7,7 @@
     npm init -y
     npm install --save-dev assemblyscript
     npx asinit . -y
+    code .
     ```
 
 1. Populate `assembly/index.ts` with following contents
