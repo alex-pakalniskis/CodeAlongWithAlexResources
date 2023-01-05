@@ -4,9 +4,9 @@
 
     ``` bash
     mkdir as-mandelbrot && cd as-mandelbrot
-    npm init
+    npm init -y
     npm install --save-dev assemblyscript
-    npx asinit .
+    npx asinit . -y
     ```
 
 1. Populate `assembly/index.ts` with following contents
