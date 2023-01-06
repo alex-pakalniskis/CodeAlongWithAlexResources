@@ -240,3 +240,4 @@
 ## Resources
 * Tutorial link: https://www.assemblyscript.org/examples/mandelbrot.html
 * Set up new AssymblyScript project: https://www.assemblyscript.org/getting-started.html#setting-up-a-new-project
+* Reference code: https://github.com/AssemblyScript/examples/tree/main/mandelbrot
